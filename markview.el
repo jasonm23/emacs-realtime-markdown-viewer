@@ -1,4 +1,4 @@
-;;; realtime-markdown-viewer.el --- Realtime Markdown editing / viewing
+;;; markview.el --- Realtime Markdown editing / viewing for Emacs
 
 ;; Author: Jason Milkins
 ;; Original Author: Syohei YOSHIDA <syohex@gmail.com>
@@ -27,12 +27,12 @@
 
 (require 'websocket)
 
-(defgroup realtime-markdown-viewer nil
-  "Realtime Markdown Viewer"
+(defgroup markview nil
+  "Markview"
   :group 'text
-  :prefix "rtmv:")
+  :prefix "mv:")
 
-(defcustom rtmv:port 5021
+(defcustom mv:port 5021
   "Port number for web server App."
   :type 'integer
   :group 'realtime-markdown-viewer)
